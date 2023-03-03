@@ -23,7 +23,7 @@ const Episodes = () => {
     },
   ];
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto pb-[121px]">
       <div className="mb-16 flex justify-between flex-wrap lg:flex-nowrap">
         <div>
           <h3 className="text-32px text-dark mb-4 ">Recent Episodes</h3>

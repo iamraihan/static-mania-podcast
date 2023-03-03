@@ -1,11 +1,11 @@
-# Podcasts
+# Podcasts Live Website
 
-## [Live Site](https://nimble-sunshine-caee5c.netlify.app/).
+## [https://nimble-sunshine-caee5c.netlify.app](https://nimble-sunshine-caee5c.netlify.app/).
 
 ## Website run command.
 
 ```
-$ npm start
+npm start
 ```
 
 Or
