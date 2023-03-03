@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Podcasts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Live Site](https://nimble-sunshine-caee5c.netlify.app/).
 
-## Available Scripts
+# &lt;clipboard-copy&gt; element
 
-In the project directory, you can run:
+Copy element text content or input values to the clipboard.
 
-### `yarn start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+$ npm install --save @github/clipboard-copy-element
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `yarn test`
+### Script
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Import as ES modules:
 
-### `yarn build`
+```js
+import "@github/clipboard-copy-element";
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+With a script tag:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```html
+<script type="module" src="./node_modules/@github/clipboard-copy-element/dist/index.js">
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Markup
 
-### `yarn eject`
+```html
+<clipboard-copy for="blob-path" class="btn btn-sm BtnGroup-item">
+  Copy path
+</clipboard-copy>
+<div id="blob-path">src/index.js</div>
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Data sources
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Attribute
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```html
+<clipboard-copy value="src/index.js">Copy</clipboard-copy>
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Element content
 
-## Learn More
+```html
+<clipboard-copy for="blob-path">Copy</clipboard-copy>
+<div id="blob-path">src/index.js</div>
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Form input
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```html
+<clipboard-copy for="blob-path">Copy</clipboard-copy>
+<input id="blob-path" value="src/index.js" />
+```
 
-### Code Splitting
+### Hyperlink href
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```html
+<clipboard-copy for="blob-path">Copy full URL</clipboard-copy>
+<a id="blob-path" href="/path/to#my-blob">Link text will not be copied</a>
+```
 
-### Analyzing the Bundle Size
+## Events
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+After copying to the clipboard, a `clipboard-copy` event is dispatched from
+the `<clipboard-copy>` element:
 
-### Making a Progressive Web App
+```js
+document.addEventListener("clipboard-copy", function (event) {
+  const button = event.target;
+  button.classList.add("highlight");
+});
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Browser support
 
-### Advanced Configuration
+Browsers without native [custom element support][support] require a [polyfill][].
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Chrome
+- Firefox
+- Safari
+- Microsoft Edge
 
-### Deployment
+[support]: https://caniuse.com/#feat=custom-elementsv1
+[polyfill]: https://github.com/webcomponents/polyfills/tree/master/packages/custom-elements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Development
 
-### `yarn build` fails to minify
+```
+npm install
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+Distributed under the MIT license. See LICENSE for details.
