@@ -1,5 +1,4 @@
 import React from "react";
-import bioCoins from "../assets/images/articles/bitcoins-and-u-s-dollar-bills-730547.png";
 
 const ArticleNewsCard = (data) => {
   return (
