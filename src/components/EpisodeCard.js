@@ -1,16 +1,14 @@
 import React from "react";
-import besideTable from "../assets/images/episodes/photo-of-people-sitting-beside-table-3182755.png";
 import playIcon from "../assets/images/episodes/play-icon.svg";
 
-const EpisodeCard = () => {
+const EpisodeCard = ({ episode }) => {
+  console.log(episode.title);
   return (
     <div>
       <div className="mb-8">
-        <img className="w-full" src={besideTable} alt="" />
+        <img className="w-full" src={episode?.photos} alt="" />
       </div>
-      <h3 className="heading-3 mb-4">
-        Ep 1: How to build a world-class business brand
-      </h3>
+      <h3 className="heading-3 mb-4">{episode?.title}</h3>
       <p className="body-text mb-4">
         Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum.
       </p>

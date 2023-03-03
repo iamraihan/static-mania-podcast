@@ -7,11 +7,19 @@ const Episodes = () => {
       id: 1,
       photos:
         "https://raw.githubusercontent.com/iamraihan/static-mania-podcast/main/src/assets/images/episodes/photo-of-people-sitting-beside-table-3182755.png",
+      title: "Ep 1: How to build a world-class business brand",
     },
     {
       id: 2,
       photos:
         "https://raw.githubusercontent.com/iamraihan/static-mania-podcast/main/src/assets/images/episodes/photo-of-women-having-conversation-3194524.png",
+      title: "Ep 2: Getting the first 100 customers fo r your business",
+    },
+    {
+      id: 3,
+      photos:
+        "https://raw.githubusercontent.com/iamraihan/static-mania-podcast/main/src/assets/images/episodes/person-with-phone.png",
+      title: "Ep 3: Should I raise money for my startup, or not?",
     },
   ];
   return (
@@ -28,8 +36,10 @@ const Episodes = () => {
           <button className="primary-btn ">See All Episiodes</button>
         </div>
       </div>
-      <div>
-        <EpisodeCard />
+      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4">
+        {allEpisodes.map((episode) => (
+          <EpisodeCard key={episode.id} episode={episode} />
+        ))}
       </div>
     </div>
   );
