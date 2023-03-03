@@ -16,9 +16,15 @@
     @apply text-base;
   }
   .heading-1 {
-    @apply text-5xl leading-[110%] font-bold;
+    @apply text-5xl leading-[110%] font-bold text-dark;
+  }
+  .heading-3 {
+    @apply text-2xl leading-[125%] font-semibold text-dark;
   }
   .body-text {
     @apply text-base leading-[150%] text-dark;
+  }
+  .primary-btn {
+    @apply text-base font-medium px-8 py-3 bg-primary text-white;
   }
 }

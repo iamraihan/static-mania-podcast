@@ -1,9 +1,12 @@
 import React from "react";
+import Brands from "./Brands";
+import Hero from "./Hero";
 
 const Home = () => {
   return (
-    <div className="container mx-auto">
-      <h2>Home</h2>
+    <div className="">
+      <Hero />
+      <Brands />
     </div>
   );
 };

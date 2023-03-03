@@ -20,6 +20,7 @@ module.exports = {
         DEFAULT: "1rem",
         sm: "1rem",
         lg: "1rem",
+        xl: "0",
       },
     },
     extend: {
