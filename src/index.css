@@ -24,10 +24,14 @@
   .heading-3 {
     @apply text-2xl leading-[125%] font-semibold text-dark;
   }
+
   .body-text {
     @apply text-base leading-[150%] text-dark;
   }
   .primary-btn {
     @apply text-base font-medium px-8 py-3 bg-primary text-white;
+  }
+  .footer-title {
+    @apply text-xl leading-[150%] font-bold text-white;
   }
 }

@@ -10,7 +10,7 @@ const Navbar = () => {
           <img src={logo} alt="" />
         </Link>
       </div>
-      <Link to="#">
+      <Link to="/about">
         <p className="body-text leading-7">About</p>
       </Link>
     </div>
