@@ -29,6 +29,15 @@ module.exports = {
         primary: "#503AE7",
         dark: "#14142B;",
       },
+      fontSize: {
+        "32px": [
+          "32px",
+          {
+            lineHeight: "120%",
+            fontWeight: "700",
+          },
+        ],
+      },
     },
   },
   plugins: [],

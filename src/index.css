@@ -18,6 +18,9 @@
   .heading-1 {
     @apply text-5xl leading-[110%] font-bold text-dark;
   }
+  .heading-2 {
+    @apply;
+  }
   .heading-3 {
     @apply text-2xl leading-[125%] font-semibold text-dark;
   }

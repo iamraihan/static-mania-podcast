@@ -20,7 +20,10 @@ const Hero = () => {
             />
             <div>
               {" "}
-              <button type="submit" className=" primary-btn text-[#F4F2FF]">
+              <button
+                type="submit"
+                className=" primary-btn text-[#F4F2FF] py-2"
+              >
                 Subscribe
               </button>
             </div>
