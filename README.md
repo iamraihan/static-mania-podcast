@@ -11,5 +11,23 @@ npm start
 Or
 
 ```
-$ yarn start
+ yarn start
 ```
+
+## Package Installation Command.
+
+```
+npm install
+```
+
+Or
+
+```
+ yarn
+```
+
+## Uses Technology
+
+- React JS
+- React router dom
+- Tailwind CSS
