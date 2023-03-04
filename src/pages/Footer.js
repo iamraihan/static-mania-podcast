@@ -15,30 +15,6 @@ const Footer = () => {
   return (
     <div className="">
       <div className=" ">
-        {/* <div className="bg-primary container mx-auto  ">
-          <div className="p-[72px]">
-            <h3 className="heading-3 text-white text-center mb-16">
-              Our Sponsors
-            </h3>
-            <div className="flex justify-between flex-wrap lg:flex-nowrap gap-[84px]">
-              <div>
-                <img src={logoIpsum_1} alt="" />
-              </div>
-              <div>
-                <img src={logoIpsum_2} alt="" />
-              </div>
-              <div>
-                <img src={logoIpsum_3} alt="" />
-              </div>
-              <div>
-                <img src={logoIpsum_4} alt="" />
-              </div>
-              <div>
-                <img src={logoIpsum_5} alt="" />
-              </div>
-            </div>
-          </div>
-        </div> */}
         <div className="bg-dark pb-24  pt-[192px]">
           <div className="bg-primary container mx-auto mt-[-420px] lg:mt-[-372px]">
             <div className="p-[72px]">
